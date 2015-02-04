@@ -1,2 +1,5 @@
 *.pyc
 .env
+.doit.db
+cache
+output
