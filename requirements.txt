@@ -1,0 +1,4 @@
+git+https://github.com/govlab/nikola.git@d20b42aafa845ae4e1393f475e5bb86870c332b0#egg=common
+webassets
+markdown
+jinja2
