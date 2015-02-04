@@ -1,7 +1,7 @@
 <!-- 
-.. title: foo bar test
-.. slug: foo-bar-test
-.. date: 2015-02-04 16:12:27 UTC-05:00
+.. title: Try It
+.. slug: try-it
+.. date: 2015-02-04 16:31:55 UTC-05:00
 .. tags: 
 .. link: 
 .. description: 
