@@ -115,8 +115,8 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/stories/try-it", "Try it"),
-        ("/stories/docs", "Docs"),
+        ("/try-it", "Try it"),
+        ("/docs", "Docs"),
         ("https://github.com/talos/docker4data", "Code"),
     ),
 }
@@ -199,9 +199,9 @@ POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.rst", "stories", "story.tmpl"),
-    ("stories/*.md", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
+    ("stories/*.rst", "", "story.tmpl"),
+    ("stories/*.md", "", "story.tmpl"),
+    ("stories/*.txt", "", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
