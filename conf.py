@@ -21,12 +21,12 @@ BLOG_AUTHOR = "John Krauss"  # (translatable)
 BLOG_TITLE = "Docker for Data"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://docker4data.com/"
+SITE_URL = "http://www.docker4data.com/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://docker4data.com/"
 BLOG_EMAIL = "john@thegovlab.org"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
+#BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
 
 # Nikola is multilingual!
 #
