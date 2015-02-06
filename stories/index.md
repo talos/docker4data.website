@@ -8,7 +8,9 @@
 .. type: text
 -->
 
-## Open data is great.
+<img src="assets/img/liberty.jpg") class="img-responsive" alt="Statue of Liberty">
+
+## Open data is great
 
 But...
 
@@ -17,6 +19,10 @@ But...
 * Stitching them back together takes time and research
 
 ## Meet Docker4Data
+
+<center>
+<iframe src="https://docs.google.com/presentation/d/1N5eP7D1VAq9Yer0eLgdC_yOn956eHk8w5NppZs2A2rA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</center>
 
 Inspired by and leveraging the [Docker][] container ecosystem, Docker4Data can
 provide the data you need, nicely packaged and ready to use:
