@@ -1,5 +1,5 @@
 *.pyc
 .env
-.doit.db
+.doit.db*
 cache
 output
