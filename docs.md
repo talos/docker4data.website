@@ -43,9 +43,9 @@ Docker4Data, as they supply an Ubuntu image pre-stocked with Docker using AUFS.
 ### Create the instance
 
 Log into [DigitalOcean][], then select "Create Droplet".  Name your droplet.
-You can choose the cheapest ($5/month) option.  Under "Select Image", choose
-the "Applications" tab and select "Docker 1.4.1 on 14.04".  Create the droplet,
-and wait about a minute for it to be provisioned.
+You can choose the second cheapest ($10/month) option.  Under "Select Image",
+choose the "Applications" tab and select "Docker 1.4.1 on 14.04".  Create the
+droplet, and wait about a minute for it to be provisioned.
 
   [DigitalOcean]: https://www.digitalocean.com
 
@@ -72,7 +72,7 @@ with DigitalOcean.
 First, create an Ubuntu instance. "Ubuntu Server 14.04 LTS (HVM), SSD Volume
 Type - ami-9a562df2" and "t2.micro" should be fine.  You'll need to do "Step 3:
 Configure Instance Details" in order to enable "Auto-assign public IP".  You'll
-also need to up the amount of hard disk available on `dev/sda1` to 20GB in
+also need to up the amount of hard disk available on `dev/sda1` to 30GB in
 "Step 4: Add Storage".
 
 By default, we'll run the Docker4Data web frontend on port 8080.  You'll need
