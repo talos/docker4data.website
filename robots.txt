@@ -1,2 +1,2 @@
-Sitemap: http://docker4data.com/sitemapindex.xml
+Sitemap: http://www.docker4data.com/sitemapindex.xml
 
