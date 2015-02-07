@@ -8,7 +8,12 @@
 .. type: text
 -->
 
-You can try out a shared Docker4Data instance below.
+You can try out a shared Docker4Data instance below.  Take a look at a [few][]
+[sample][] [queries][] to get an idea of what's possible.
+
+  [few]: https://raw.githubusercontent.com/talos/docker4data/master/images/nyc-acris/queries/biggest-buyers.sql
+  [sample]: https://raw.githubusercontent.com/talos/docker4data/master/images/nyc-acris/queries/boa-mortgages.sql
+  [queries]: https://raw.githubusercontent.com/talos/docker4data/master/images/nyc-acris/queries/mortgages-through-time.sql
 
 <iframe src="http://acris.docker4data.com:8080" frameBorder="0" style="border:0px; width:100%; height: 480px"></iframe>
 

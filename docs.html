@@ -104,7 +104,7 @@ and wait about a minute for it to be provisioned.</p>
 <h4>Log in</h4>
 <p>You can either use the "Console Access" button or log in via root at the public
 IP.</p>
-<pre class="code literal-block"><span class="nv">$ </span>ssh root@my.ip.ad.rr
+<pre class="code literal-block">ssh root@my.ip.ad.rr
 </pre>
 
 
@@ -120,6 +120,11 @@ Type - ami-9a562df2" and "t2.micro" should be fine.  You'll need to do "Step 3:
 Configure Instance Details" in order to enable "Auto-assign public IP".  You'll
 also need to up the amount of hard disk available on <code>dev/sda1</code> to 20GB in
 "Step 4: Add Storage".</p>
+<p>By default, we'll run the Docker4Data web frontend on port 8080.  You'll need
+to allow inbound TCP traffic for this port.  To do so, on "Step 6", add a rule
+to the security group.  Select "Custom TCP Rule", and enter "8080" under "Port
+Range".  Choose "Anywhere" as the source unless you know your IP and wish to
+limit access to it exclusively.</p>
 <h4>Log in</h4>
 <p>Once the instance is created, click the "Connect" button in the AWS console.
 This should supply your IP address to connect to.  The connection string should
@@ -135,54 +140,26 @@ look like this, except with your private key and IP:</p>
 
 <p>If <code>/dev/xvda1</code> doesn't show at least 15G under "Avail", you'll need to
 re-create this instance with more hard disk in "Step 4" above.</p>
-<h4>Open port 8080</h4>
-<p>By default, we'll run the Docker4Data web frontend on port 8080.  You'll need
-to allow inbound TCP traffic for this port.</p>
-<p>The simplest way is to click on your instance, then the security group next to
-"Security Groups".  Then click "Inbound", then "Edit", and "Add Rule".  Select
-"Custom TCP Rule", and enter "8080" under "Port Range".  Choose "Anywhere" as
-the source unless you know your IP and wish to limit access to it exclusively.</p>
 <h4>Install Docker</h4>
 <p>It's not too difficult to get Docker running on Ubuntu.  You'll first need to
 install AUFS, as without it Docker doesn't play nice with really big images.</p>
-<pre class="code literal-block"><span class="nv">$ </span>sudo apt-get update
-<span class="nv">$ </span>sudo apt-get -y install linux-image-extra-<span class="k">$(</span>uname -r<span class="k">)</span>
+<pre class="code literal-block">sudo apt-get update
+sudo apt-get -y install linux-image-extra-$(uname -r)
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 </pre>
 
 
-<h5>Easy way</h5>
-<p>If you're someone who trusts "curl it and sudo it".</p>
-<pre class="code literal-block"><span class="nv">$ </span>curl -sSL https://get.docker.com/ubuntu/ <span class="p">|</span> sudo sh
-</pre>
-
-
-<h5>Slightly more complicated way</h5>
-<p>If you don't. ;)</p>
-<pre class="code literal-block"><span class="nv">$ </span>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
-<span class="nv">$ </span>sudo sh -c <span class="s2">"echo deb https://get.docker.com/ubuntu docker main &gt; /etc/apt/sources.list.d/docker.list"</span>
-<span class="nv">$ </span>sudo apt-get update
-<span class="nv">$ </span>sudo apt-get -y install lxc-docker
-</pre>
-
-
-<p>Make sure that Docker is installed properly.</p>
-<pre class="code literal-block"><span class="nv">$ </span>sudo docker --version
-Docker version 1.4.1, build 5bc2ff8
-</pre>
-
-
-<p>If that looks dandy, let's pull down the image!</p>
 <h2>Pull down the image</h2>
 <p>This should take between 9 and 11 minutes on DigitalOcean, and a little less on
 AWS.  Grab some coffee.  <a href="http://play-minesweeper.com/">Play Minesweeper</a>.</p>
-<pre class="code literal-block"><span class="nv">$ </span>sudo docker pull thegovlab/docker4data-acris
+<pre class="code literal-block">time sudo docker pull thegovlab/docker4data-acris
 </pre>
 
 
 <h2>Play with the data</h2>
 <p>First, you'll need to launch the image.  This will run the web interface on
 port 8080.  Change the number before the colon to change to a different port.</p>
-<pre class="code literal-block"><span class="nv">$ </span>sudo docker run --name acris -d -p 8080:8080 thegovlab/docker4data-acris
+<pre class="code literal-block">sudo docker run --name acris -d -p 8080:8080 thegovlab/docker4data-acris
 </pre>
 
 
@@ -192,7 +169,7 @@ If you're running locally, the web interface will be at
 <a href="http://localhost:8080">http://localhost:8080</a>.</p>
 <p>If you want to make queries directly in the commandline, you can drop into psql
 directly.</p>
-<pre class="code literal-block"><span class="nv">$ </span>sudo docker <span class="nb">exec</span> -i acris gosu postgres psql
+<pre class="code literal-block">sudo docker exec -i acris gosu postgres psql
 </pre>
 </div>
     </div>
