@@ -2,3 +2,4 @@ git+https://github.com/govlab/nikola.git@d20b42aafa845ae4e1393f475e5bb86870c332b
 webassets
 markdown
 jinja2
+livereload==2.4.0

@@ -27,7 +27,7 @@
       <link rel="stylesheet" href="/assets/css/animate.min.css">
       <link rel="stylesheet" href="/assets/css/owl.carousel.css">
       <link rel="stylesheet" href="/assets/css/owl.theme.css">
-      <link rel="stylesheet" href="/assets/css/main.css"> 
+      <link rel="stylesheet" href="/assets/css/main.css">
 
       <!-- Font -->
       <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600' rel='stylesheet' type='text/css'>
@@ -73,9 +73,9 @@
             <li><a data-scroll href="#nav">Home</a></li>
             <li><a data-scroll href="#about">About</a></li>
             <li><a data-scroll href="#explore">Explore</a></li>
-            <li><a data-scroll href="#tools">Tools</a></li>
-            <li><a data-scroll href="#case-studies">Case Studies</a></li>
-            <li><a data-scroll href="#contact">Contact</a></li>
+            <li><a data-scroll href="#try-it">Try it</a></li>
+            <li><a data-scroll href="#plans">Plans</a></li>
+            <!--<li><a data-scroll href="#contact">Contact</a></li>-->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
@@ -86,10 +86,10 @@
         <ul class="slides-container">
 
             <li>
-                <img style="opacity: 0.3;" src="/assets/img/train-cropped.jpg" alt="">
+                <img src="/assets/img/train-cropped.jpg" alt="">
                 <div class="container text-center">
-                    <h1 style="color: black;" class="uppercase">{{ blog_title }}</h1>
-                    <p style="color: black;" class="lead">Large civic datasets.  Usable.</p>
+                    <h1 class="uppercase">{{ blog_title }}</h1>
+                    <p class="lead">Large civic datasets, made usable.</p>
 
                 </div>
             </li>
@@ -97,73 +97,84 @@
         </ul>
     </div>
 
+    <!-- SECTION WELCOME -->
+    <section id="welcome">
+            <div class="container">
+            <div class="row">
+                    <div class="col-lg-12 text-center">
+                    <div class="logo" style="height:100px;margin-left:auto;margin-right:auto;">
+                      <span style="position:relative;font-size:40px;left:15px;top:-40px;">d</span>
+                      <span style="position:relative;font-size:80px;left:0px;top:0px;">4</span>
+                      <span style="position:relative;font-size:40px;left:-10px;top:15px;">d</span>
+                    </div>
+                    <h1 class="wow fadeInDown">Public data <span class="rotate">in a real database., collected in one place., fast., updating automatically., ready to go.</span></h1>
+                    <p class="subhead wow fadeInDown" data-wow-delay="0.2s">Inspired by and leveraging the Docker container ecosystem,<br />Docker for Data can provide the data you need, conveniently packaged and ready to use.</p>
+<!--<br>Instead of spending hours figuring out how to download and coordinate data, you can get immediate access to it in a standard relational database.-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section id="about">
+        <div class="about-img" data-stellar-background-ratio="0.5">
+            <div id="head" class="container">
+                <div class="row text-center">
+                    <h2 class="col-lg-12 uppercase wow fadeInDown">what it is</h2>
+                    <p class="subhead wow fadeInUp">Every open data set in the United States, in Postgres.</p>
+                    <img src="/assets/img/postgresus.png" width="150" height="100" alt="">
+                    <!--<i class="pe-7s-loop pe-5x wow fadeInDown animated" data-wow-delay="0.4s"></i>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-lg-12">Open data is great</h3>
+
+                    <div class="col-lg-4">
+                          <p class="subhead">portals aren't</p>
+                          <p>Portals are focused on single-table views in the
+                             browser and a limited set of API functionality.<br /><br />
+                          This is great until you need to do deep analysis
+                             or build a business on it.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                            <p class="subhead">it doesn't need to be this hard</p>
+                            <p>Downloading big datasets can take hours.  It
+                               can take many more hours finding the location of
+                               important small datasets, especially those not
+                               living on the same portal.  Add in a few more
+                               hours to load everything into a real database
+                               and figure out the relations, and you've spent
+                               days (or thousands of dollars) on something
+                               trivial.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                            <p class="subhead">there's a better way</p>
+                            <p>Docker for data lets you plug directly into a
+                               geospatial-enabled (PostGIS) database with
+                               thousands of US open data sets already loaded
+                               and ready to go.</p>
+                    </div>
+                </div>
+            </div> 
+                    </div>
+    </section>
+
     <!-- SECTION PROCESS -->
     <section id="explore">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow fadeInDown">
-                    <h2 class="uppercase">Explore by sector</h2>
-                    <p class="subhead">Data X Collaboration is an effort to ...</p>
+                    <h2 class="uppercase">Explore what's included</h2>
+                    <p class="subhead">Every dataset on a Socrata open data portal lives in Postgres on Docker for Data. More to come.</p>
                 </div>
             </div>
-
-            <div class="row">
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
-                    <i class="pe-7s-umbrella pe-4x"></i>
-                    <h3 class="uppercase">Climate, Environment &amp; Energy</h3>
-                </div>
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
-                    <i class="pe-7s-study pe-4x"></i>
-                    <h3 class="uppercase">Education</h3>
-                </div>
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
-                    <i class="pe-7s-piggy pe-4x"></i>
-                    <h3 class="uppercase">Finance</h3>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
-                    <i class="pe-7s-like pe-4x"></i>
-                    <h3 class="uppercase">Health &amp; Healthcare</h3>
-                </div>
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
-                    <i class="pe-7s-airplay pe-4x"></i>
-                    <h3 class="uppercase">Media, IT &amp; Communications</h3>
-                </div>
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
-                    <i class="pe-7s-signal pe-4x"></i>
-                    <h3 class="uppercase">Remote Sensing &amp; Satellites</h3>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
-                    <i class="pe-7s-plane pe-4x"></i>
-                    <h3 class="uppercase">Transportation & Hospitality</h3>
-                </div>
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
-                    <i class="pe-7s-plugin pe-4x"></i>
-                    <h3 class="uppercase">Technology &amp; Social Media</h3>
-                </div>
-
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
-                    <i class="pe-7s-light pe-4x"></i>
-                    <h3 class="uppercase">Telecommunications</h3>
-                </div>
-
-            </div>
-
+            <iframe id="opendatacache" src="http://www.opendatacache.com/?framed=true" seamless="seamless"></iframe>
         </div>
     </section>
 
@@ -175,20 +186,20 @@
 
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="col-xs-6 col-md-4 col-lg-4">
-                            <p class="timer" data-to="40" data-speed="10000"></p>
-                            <p>case studies</p>
+                            <p class="timer" data-to="26" data-speed="10000"></p>
+                            <p>GB of data</p>
                             <i class="fa fa-lg fa-smile-o fa-4x"></i>
                         </div>
 
                         <div class="col-xs-6 col-md-4 col-lg-4">
-                            <p class="timer" data-to="920" data-speed="10000"></p>
+                            <p class="timer" data-to="8229" data-speed="10000"></p>
                             <p>datasets</p>
                             <i class="fa fa-lg fa-thumbs-o-up fa-4x"></i>
                         </div>
 
                         <div class="col-xs-6 col-md-4 col-lg-4">
-                            <p class="timer" data-to="51" data-speed="10000"></p>
-                            <p>partnerships created</p>
+                            <p class="timer" data-to="55" data-speed="10000"></p>
+                            <p>portals</p>
                             <i class="fa fa-lg fa-coffee fa-4x"></i>
                         </div>
                     </div>
@@ -199,146 +210,36 @@
     </div>
 
 
-    <!-- SECTION PROCESS -->
-    <section id="tools">
+    <!-- SECTION PLANS -->
+    <section id="plans">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow fadeInDown">
-                    <h2 class="uppercase">Tools</h2>
-                    <p class="subhead">Data X Collaboration is an effort to ...</p>
+                    <h2 class="uppercase">Plans</h2>
                 </div>
 
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
-                    <i class="pe-7s-note2 pe-4x"></i>
-                    <h3 class="uppercase"><span class="number">01</span> Case Studies</h3>
-                    <p>Our case studies showcase ...</p>
-                </div>
+                    <div class="col-lg-4">
+                          <h4>DIY</h4>
+                          <h1>Free</h1>
+                          <p>Comfortable setting up Docker?  Start working with the data on your box in minutes.</p>
+                    </div>
 
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
-                       <i class="pe-7s-plugin pe-4x"></i>
-                    <h3 class="uppercase"><span class="number">02</span> Toolkit</h3>
-                    <p>Toolkit for forming data collaboratives ...</p>
-                </div>
+                    <div class="col-lg-4 plan-border">
+                          <h4>À la carte</h4>
+                          <h1>$1/hour</h1>
+                          <p>Want to start playing with no setup?  We'll bring the equipment.</p>
+                    </div>
 
-                <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
-                       <i class="pe-7s-light pe-4x"></i>
-                    <h3 class="uppercase"><span class="number">03</span> Research &amp; Insights</h3>
-                    <p>Research &amp; Insights ...</p>
-                </div>
-
-
+                    <div class="col-lg-4 plan-border">
+                          <h4>Enterprise</h4>
+                          <h1>$500/month</h1>
+                          <p>Planning to build a business on public data? Look no further.</p>
+                    </div>
             </div>
         </div>
     </section>
 
 
-
-
-
-    <!-- WORKS -->
-    <section id="case-studies">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="uppercase">Case Studies</h2>
-                </div>
-                <div class="wrapper">
-
-
-
-                    <!-- PORTOLIO FILTER -->
-                    <div style="margin-bottom: 0;" id="filters-container" class="filters-container cbp-l-filters-button">
-    <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".climate_environment" class="cbp-filter-item">Climate & Environment</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".education" class="cbp-filter-item">Education</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".finance" class="cbp-filter-item">Finance</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".health" class="cbp-filter-item">Health</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".remote_sensing" class="cbp-filter-item">Remote Sensing</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".resilience" class="cbp-filter-item">Resilience</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".technology" class="cbp-filter-item">Technology</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".telecommunications" class="cbp-filter-item">Telecommunications</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".transportation" class="cbp-filter-item">Transportation</div>
-
-</div>
-                    <div style="margin-bottom: 0;" id="filters-container" class="filters-container cbp-l-filters-button">
-    <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".africa_the_middle_east" class="cbp-filter-item">Africa & the Middle East</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".asia" class="cbp-filter-item">Asia</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".central_south_america" class="cbp-filter-item">Central & South America</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".europe" class="cbp-filter-item">Europe</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".north_america" class="cbp-filter-item">North America</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".worldwide" class="cbp-filter-item">Worldwide</div>
-
-</div>
-                    <div style="margin-bottom: 0;" id="filters-container" class="filters-container cbp-l-filters-button">
-    <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".api" class="cbp-filter-item">API</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".data_collaboratives" class="cbp-filter-item">Data Collaboratives</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".intelligence_products" class="cbp-filter-item">Intelligence Products</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".prizes_challenges" class="cbp-filter-item">Prizes & Challenges</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".research_partnerships" class="cbp-filter-item">Research Partnerships</div>
-
-        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".trusted_intermediaries" class="cbp-filter-item">Trusted Intermediaries</div>
-
-</div>
-                    <div style="margin-bottom: 0;" id="filters-container" class="filters-container cbp-l-filters-button">
-    <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
-    <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".announced" class="cbp-filter-item">Announced</div>
-    <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".ended" class="cbp-filter-item">Ended</div>
-    <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".ongoing" class="cbp-filter-item">Ongoing</div>
-    <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".pilot" class="cbp-filter-item">Pilot</div>
-</div>
-
-<!-- PORTOLIO -->
-<div style="margin-top: 30px;" id="grid-container" class="cbp-l-grid-projects ">
-    <ul>
-
-
-        <li class="cbp-item health worldwide research_partnerships announced">
-            <div class="cbp-caption">
-                <div class="cbp-caption-defaultWrap">
-                    <img src="/assets/img/case-studies-img/23andMe.jpg" alt="" width="100%">
-                </div>
-                <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-alignCenter">
-                        <div class="cbp-l-caption-body">
-                            <a href="ajax/23andme_patient_centric_research_portal.html" class="cbp-singlePage cbp-l-caption-buttonLeft"><i class="pe-3x pe-7s-plus"></i></a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cbp-l-grid-projects-title">23andMe Patient-Centric Research Portal</div>
-        </li>
-
-  </ul>
-</div>
-
-
-          </div>
-      </div>
-  </div>
-</section>
 
 
       <!-- FOOTER -->
