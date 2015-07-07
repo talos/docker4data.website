@@ -13,7 +13,7 @@
 	9. TESTIMONIAL
 	10. SERVICES
 	11. WORKS
-	12. HIGHLIGHT
+	12. try-it
 	13. CLIENTS
 	14. CONTACT
 	15. MISC.
@@ -383,22 +383,22 @@ h4 {
    if you want any change on portfolio, please go cubeportfolio.css */
    
    
-/* HIGHLIGHT */
+/* try-it */
 
-#highlight {
+#try-it {
 	color:#ffffff;
 	background:#1a1a1a;
 	padding:50px 0;
 }
 
-#highlight .lead {
+#try-it .lead {
 	color:#c3ac6d;
 	font-family:'misolight';
 	font-size:30px;
 	margin:15px 0 0 0;
 }
 
-#highlight .button {
+#try-it .button {
 	margin:10px;
 }
 
@@ -882,4 +882,12 @@ iframe#opendatacache {
 
 .plan-border {
   border-left: 2px solid #1a1a1a;
+}
+
+footer {
+  background:#503281 !important;
+}
+
+footer h4 {
+  color: white;
 }
