@@ -43,9 +43,9 @@ Docker4Data, as they supply an Ubuntu image pre-stocked with Docker using AUFS.
 ### Create the instance
 
 Log into [DigitalOcean][], then select "Create Droplet".  Name your droplet.
-You can choose the second cheapest ($10/month) option.  Under "Select Image",
-choose the "Applications" tab and select "Docker 1.4.1 on 14.04".  Create the
-droplet, and wait about a minute for it to be provisioned.
+You can choose the cheapest ($5/month) option.  Under "Select Image", choose
+the "Applications" tab and select "Docker 1.4.1 on 14.04".  Create the droplet,
+and wait about a minute for it to be provisioned.
 
   [DigitalOcean]: https://www.digitalocean.com
 
@@ -55,7 +55,7 @@ You can either use the "Console Access" button or log in via root at the public
 IP.
 
 ```
-ssh root@my.ip.ad.rr
+$ ssh root@my.ip.ad.rr
 ```
 
 You're now ready to pull down the image (below).
@@ -72,14 +72,8 @@ with DigitalOcean.
 First, create an Ubuntu instance. "Ubuntu Server 14.04 LTS (HVM), SSD Volume
 Type - ami-9a562df2" and "t2.micro" should be fine.  You'll need to do "Step 3:
 Configure Instance Details" in order to enable "Auto-assign public IP".  You'll
-also need to up the amount of hard disk available on `dev/sda1` to 30GB in
+also need to up the amount of hard disk available on `dev/sda1` to 20GB in
 "Step 4: Add Storage".
-
-By default, we'll run the Docker4Data web frontend on port 8080.  You'll need
-to allow inbound TCP traffic for this port.  To do so, on "Step 6", add a rule
-to the security group.  Select "Custom TCP Rule", and enter "8080" under "Port
-Range".  Choose "Anywhere" as the source unless you know your IP and wish to
-limit access to it exclusively.
 
 ### Log in
 
@@ -100,16 +94,53 @@ df -h
 If `/dev/xvda1` doesn't show at least 15G under "Avail", you'll need to
 re-create this instance with more hard disk in "Step 4" above.
 
+### Open port 8080
+
+By default, we'll run the Docker4Data web frontend on port 8080.  You'll need
+to allow inbound TCP traffic for this port.
+
+The simplest way is to click on your instance, then the security group next to
+"Security Groups".  Then click "Inbound", then "Edit", and "Add Rule".  Select
+"Custom TCP Rule", and enter "8080" under "Port Range".  Choose "Anywhere" as
+the source unless you know your IP and wish to limit access to it exclusively.
+
 ### Install Docker
 
 It's not too difficult to get Docker running on Ubuntu.  You'll first need to
 install AUFS, as without it Docker doesn't play nice with really big images.
 
 ```
-sudo apt-get update
-sudo apt-get -y install linux-image-extra-$(uname -r)
-curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+$ sudo apt-get update
+$ sudo apt-get -y install linux-image-extra-$(uname -r)
 ```
+
+#### Easy way
+
+If you're someone who trusts "curl it and sudo it".
+
+```
+$ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+```
+
+#### Slightly more complicated way
+
+If you don't. ;)
+
+```
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+$ sudo sh -c "echo deb https://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
+$ sudo apt-get update
+$ sudo apt-get -y install lxc-docker
+```
+
+Make sure that Docker is installed properly.
+
+```
+$ sudo docker --version
+Docker version 1.4.1, build 5bc2ff8
+```
+
+If that looks dandy, let's pull down the image!
 
 # Pull down the image
 
@@ -117,7 +148,7 @@ This should take between 9 and 11 minutes on DigitalOcean, and a little less on
 AWS.  Grab some coffee.  [Play Minesweeper](http://play-minesweeper.com/).
 
 ```
-time sudo docker pull thegovlab/docker4data-acris
+$ sudo docker pull thegovlab/docker4data-acris
 ```
 
 # Play with the data
@@ -126,7 +157,7 @@ First, you'll need to launch the image.  This will run the web interface on
 port 8080.  Change the number before the colon to change to a different port.
 
 ```
-sudo docker run --name acris -d -p 8080:8080 thegovlab/docker4data-acris
+$ sudo docker run --name acris -d -p 8080:8080 thegovlab/docker4data-acris
 ```
 
 You should now be able to navigate to the IP of your DigitalOcean or Amazon
@@ -138,6 +169,6 @@ If you want to make queries directly in the commandline, you can drop into psql
 directly.
 
 ```
-sudo docker exec -i acris gosu postgres psql
+$ sudo docker exec -i acris gosu postgres psql
 ```
 

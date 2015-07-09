@@ -8,7 +8,7 @@
 .. type: text
 -->
 
-## Open data is great
+## Open data is great.
 
 But...
 
@@ -37,10 +37,6 @@ less than ten minutes.
 
   [try out]: /try-it
   [run your own]: /docs
-
-<div style="text-align: center; width: 100%;">
-  <iframe src="https://docs.google.com/presentation/d/1N5eP7D1VAq9Yer0eLgdC_yOn956eHk8w5NppZs2A2rA/embed?start=false&loop=false&delayms=3000" style="width:100%; height:480px"frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
 
 <!--
 Ever tried to download a big dataset from an open data portal?

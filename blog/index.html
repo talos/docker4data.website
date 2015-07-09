@@ -1,80 +1,287 @@
 <!DOCTYPE html>
-<html prefix="
-og: http://ogp.me/ns#
-article: http://ogp.me/ns/article#
-" lang="en">
-<head>
+<html class="no-js">
+<!--<![endif]--><head>
+<title>Docker for Data</title>
 <meta charset="utf-8">
-<meta name="description" content="Default Description">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Docker for Data | Docker for Data</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<link rel="canonical" href="http://www.docker4data.com/blog/">
-<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="Data X Collaboration">
+<meta name="author" content="themecube">
+<!-- viewport settings --><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- CSS --><link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/superslides.css">
+<link rel="stylesheet" href="../assets/css/font-awesome.css">
+<link rel="stylesheet" href="../assets/css/pe-icon-7-stroke.css">
+<link rel="stylesheet" href="../assets/css/helper.css">
+<link rel="stylesheet" href="../assets/css/cubeportfolio.css">
+<link rel="stylesheet" href="../assets/css/animate.min.css">
+<link rel="stylesheet" href="../assets/css/owl.carousel.css">
+<link rel="stylesheet" href="../assets/css/owl.theme.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<!-- Font --><link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Marvel:400,700" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- Favicon --><link rel="shortcut icon" href="../assets/img/favicon.ico">
 </head>
 <body>
-<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
-<!-- Menubar -->
+    <!-- PRELOADING -->
+    <div id="preload">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container">
-<!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+
+    <!-- NAVIGATION -->
+       <nav class="navbar navbar-custom navbar-fixed-top" role="navigation"><!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. --><div class="container-fluid">
+        <div data-scroll-header class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://www.docker4data.com/">
-
-                <span id="blog-title">Docker for Data</span>
-            </a>
+          </button>
+          <a class="navbar-brand uppercase" href="../">Docker for Data</a>
         </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-<li>
-<a href="../try-it">Try it</a>
-                </li>
-<li>
-<a href="../docs">Docs</a>
-                </li>
-<li>
-<a href="https://github.com/talos/docker4data">Code</a>
 
-                
-            </li>
-</ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="nav navbar-nav navbar-right uppercase">
+<li><a data-scroll href="#nav">Home</a></li>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#explore">Explore</a></li>
+            <li><a data-scroll href="#plans">Plans</a></li>
+            <li><a data-scroll href="#try-it">Try it</a></li>
+            <li><a data-scroll href="#sign-up">Sign Up</a></li>
+            <!--<li><a data-scroll href="#contact">Contact</a></li>-->
+          </ul>
 </div>
 <!-- /.navbar-collapse -->
-    </div>
-<!-- /.container -->
-</nav><!-- End of Menubar --><div class="container" id="content">
-    <div class="body-content">
-        <!--Body content-->
-        <div class="row">
-            
-<div class="postindex">
+      </div>
+    </nav><!-- FULLSCREEN SLIDER --><div id="slides">
+        <ul class="slides-container">
+<li>
+                <img src="../assets/img/train-cropped.jpg" alt=""><div class="container text-center">
+                    <h1 class="uppercase">Docker for Data</h1>
+                    <p class="lead">Large civic datasets, made usable.</p>
+
+                </div>
+            </li>
+
+        </ul>
 </div>
 
-
-
+    <!-- SECTION WELCOME -->
+    <section id="welcome"><div class="container">
+            <div class="row">
+                    <div class="col-lg-12 text-center">
+                    <div class="logo" style="height:100px;margin-left:auto;margin-right:auto;">
+                      <span style="position:relative;font-size:40px;left:15px;top:-40px;">d</span>
+                      <span style="position:relative;font-size:80px;left:0px;top:0px;">4</span>
+                      <span style="position:relative;font-size:40px;left:-10px;top:15px;">d</span>
+                    </div>
+                    <h1 class="wow fadeInDown">Public data <span class="rotate">in a real database., collected in one place., fast., updating automatically., ready to go.</span>
+</h1>
+                    <p class="subhead wow fadeInDown" data-wow-delay="0.2s">Inspired by and leveraging the Docker container ecosystem,<br>Docker for Data can provide the data you need, conveniently packaged and ready to use.</p>
+<!--<br>Instead of spending hours figuring out how to download and coordinate data, you can get immediate access to it in a standard relational database.-->
+                </div>
+            </div>
         </div>
-        <!--End of body content-->
-
-        <footer>
-            Contents © 2015         <a href="mailto:john@thegovlab.org">John Krauss</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
-            
-        </footer>
+    </section><!-- SECTION ABOUT --><section id="about"><div class="about-img" data-stellar-background-ratio="0.5">
+            <div id="head" class="container">
+                <div class="row text-center">
+                    <h2 class="col-lg-12 uppercase wow fadeInDown">what it is</h2>
+                    <p class="subhead wow fadeInUp">Every open data set in the United States, in SQL.</p>
+                    <img src="../assets/img/postgresus.png" width="150" height="100" alt=""><!--<i class="pe-7s-loop pe-5x wow fadeInDown animated" data-wow-delay="0.4s"></i>-->
 </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-lg-12">Open data is great</h3>
+
+                    <div class="col-lg-4">
+                          <p class="subhead">open data portals are not</p>
+                          <p>Existing open data portals are focused on
+                            views of single data sets in the browser.
+                          <br><br>
+                          This is great until you need to do deep analysis
+                             or build a business on it.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                            <p class="subhead">it doesn't need to be this hard</p>
+                            <p>Downloading big datasets can take hours.  It
+                               can take many more hours finding the location of
+                               important small datasets, especially those not
+                               living on the same portal.  Add in a few more
+                               hours to load everything into a real database
+                               and figure out the relations, and you've spent
+                               days (or thousands of dollars) on something
+                               trivial.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                            <p class="subhead">there's a better way</p>
+                            <p>Docker for data lets you plug directly into a
+                               geospatial-enabled (PostGIS) SQL database with
+                               thousands of US open data sets already loaded
+                               and ready to go.</p>
+                    </div>
+                </div>
+            </div> 
+                    </div>
+    </section><!-- SECTION PROCESS --><section id="explore"><div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeInDown">
+                    <h2 class="uppercase">Explore what's included</h2>
+                    <p class="subhead">Every dataset hosted on a Socrata open
+                      data portal is accessible with SQL using Docker for Data.
+                      More to come.</p>
+                </div>
+            </div>
+            <iframe id="opendatacache" src="http://www.opendatacache.com/?framed=true" seamless="seamless"></iframe>
+        </div>
+    </section><!-- MILESTONE --><div id="milestone">
+        <div class="milestone wow flipInY">
+            <div class="container">
+                <div class="row text-center">
+
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="col-xs-6 col-md-4 col-lg-4">
+                            <p class="timer" data-to="26" data-speed="10000"></p>
+                            <p>GB of data</p>
+                            <i class="fa fa-lg fa-smile-o fa-4x"></i>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4 col-lg-4">
+                            <p class="timer" data-to="8229" data-speed="10000"></p>
+                            <p>datasets</p>
+                            <i class="fa fa-lg fa-thumbs-o-up fa-4x"></i>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4 col-lg-4">
+                            <p class="timer" data-to="55" data-speed="10000"></p>
+                            <p>portals</p>
+                            <i class="fa fa-lg fa-coffee fa-4x"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SECTION PLANS -->
+    <section id="plans"><div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeInDown">
+                    <h2 class="uppercase">Plans</h2>
+                </div>
+
+                    <div class="col-lg-4">
+                          <h4>DIY</h4>
+                          <h1>Free</h1>
+                          <p>Comfortable setting up Docker?  Start working with the data on your box in minutes.</p>
+                    </div>
+
+                    <div class="col-lg-4 plan-border">
+                          <h4>À la carte</h4>
+                          <h1>$1/hour</h1>
+                          <p>Want to start playing with no setup?  We'll bring the equipment.</p>
+                          <p><i>Coming soon!</i></p>
+                    </div>
+
+                    <div class="col-lg-4 plan-border">
+                          <h4>Enterprise</h4>
+                          <h1>$500/month</h1>
+                          <p>Planning to build a business on public data? Look no further.</p>
+                          <p><i>Coming soon!</i></p>
+                    </div>
+            </div>
+        </div>
+    </section><!-- SECTION PLANS --><section id="try-it"><div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <p class="lead pull-left wow fadeInLeft">Get started using our docs on GitHub</p>
+                    <a class="button button-big button-border-light pull-right wow fadeInRight" href="https://github.com/talos/docker4data/">get now</a>
+                </div>
+            </div>
+        </div>
+    </section><section id="sign-up"><div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                <h2 class="uppercase">Sign Up</h2>
+                <p class="subhead">Want to be notified when our <b>à la carte</b> and <b>enterprise</b> plans become available?  Sign up below.</p>
+                        <div class="row" id="mc_embed_signup">
+                            <!-- form -->
+                            <form action="//johnkrauss.us11.list-manage.com/subscribe/post?u=5cc3f0319b0b48bf8810dee12&amp;id=28beb69644" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div class="col-md-8 col-lg-8">
+                                <div class="row" id="mc_embed_signup_scroll">
+<!--
+                                    <div class="col-lg-6">
+                                        <input type="text" name="name" id="name" placeholder="name" required data-validation-required-message="Please enter your name" />
+                                    </div>
+-->
+
+                                    <div class="col-lg-6">
+                                        <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="email address" required data-validation-required-message="email address">
 </div>
 
-            <script src="../assets/js/all-nocdn.js"></script><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
-    moment.locale("");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates -->
+<!--
+                                    <div class="col-lg-12">
+                                          <textarea rows="1" name="message" id="message" placeholder="message"  data-validation-required-message="Please enter your message"></textarea>  
+                                    </div>
+-->
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_5cc3f0319b0b48bf8810dee12_28beb69644" tabindex="-1" value=""></div>
+
+                                    <div class="col-lg-12 pull-right">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-border-dark">
+</div>
+
+<!--
+                                    <div class="col-lg-12 pull-right">
+                                          <button class="button button-border-dark"  onclick="contact_send();">send</button>
+                                    </div>
+-->
+                                </div>
+                            </div>
+</form> <!-- /form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Begin MailChimp Signup Form --><!--<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">--><!--<div id="mc_embed_signup">
+                <div id="mc_embed_signup_scroll">
+
+                </div>
+            </form>--><!--End mc_embed_signup--><!-- FOOTER --><!--
+      <footer>
+          <div class="container">
+              <div class="row">
+              <div class="social col-lg-12 text-center" style="position:relative;">
+                      <h4>A project of the GovLab @ NYU</h4>
+                      <a href="http://thegovlab.org" target="_blank"><img height="40" src="http://govlabacademy.org/static/img/govlab-logo-white.png" alt="The GovLab" /></a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+--><!-- modernizr --><script src="../assets/js/modernizr.custom.00695.js"></script><script src="../assets/js/jquery-1.11.0.min.js"></script><!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>--><script src="../assets/js/bootstrap.min.js"></script><script src="../assets/js/jquery.superslides.min.js"></script><script src="../assets/js/jquery.cubeportfolio.js"></script><script src="../assets/js/jquery.simple-text-rotator.min.js"></script><script src="../assets/js/owl.carousel.min.js"></script><script src="../assets/js/wow.min.js"></script><script src="../assets/js/jquery.countTo.js"></script><script src="../assets/js/jquery.stellar.min.js"></script><script src="../assets/js/smooth-scroll.js"></script><script src="../assets/js/retina-1.1.0.min.js"></script><script src="../assets/js/main.js"></script><script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-20153319-4', 'auto');
+        ga('send', 'pageview');
+
+      </script>
 </body>
 </html>
