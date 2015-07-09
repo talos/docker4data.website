@@ -1,9 +1,0 @@
-#!/Users/talos/Programming/docker4data.website/.env/bin/python
-# EASY-INSTALL-ENTRY-SCRIPT: 'Nikola==7.2.0','console_scripts','nikola'
-__requires__ = 'Nikola==7.2.0'
-import sys
-from pkg_resources import load_entry_point
-
-sys.exit(
-   load_entry_point('Nikola==7.2.0', 'console_scripts', 'nikola')()
-)

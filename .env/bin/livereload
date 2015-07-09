@@ -1,9 +1,0 @@
-#!/Users/talos/Programming/docker4data.website/.env/bin/python
-# EASY-INSTALL-ENTRY-SCRIPT: 'livereload==2.4.0','console_scripts','livereload'
-__requires__ = 'livereload==2.4.0'
-import sys
-from pkg_resources import load_entry_point
-
-sys.exit(
-   load_entry_point('livereload==2.4.0', 'console_scripts', 'livereload')()
-)
