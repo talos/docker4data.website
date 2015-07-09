@@ -3,3 +3,4 @@ webassets
 markdown
 jinja2
 livereload==2.4.0
+doit==0.27.0
